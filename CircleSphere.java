@@ -19,11 +19,21 @@ class CircleSphere {
     public static void main(String[] args) 
     {
         CircleSphere circle = new CircleSphere();
-                Scanner scnr = new Scanner (System.in);
+        Scanner scnr = new Scanner (System.in);
+                    circleOperations(circle,scnr);
+        scnr.close();
+    }
+
+    public static void circleOperations(CircleSphere circle, Scanner scnr)
+    {
+        /**
+        * complete the operation of the program
+        *@param Object, Scanner
+        *
+        */
                         circle.displayWelcome();
                         circle.computeCircleNow(circle, scnr);
                         circle.displayResults();
-                scnr.close();
     }
     
     public void displayResults()
